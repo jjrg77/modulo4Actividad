@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+ }
+
+html, body {
+  height: 100vh;  
+}
+
+body {
+  overflow: hidden;
+  background-color:#ffaf40;
+}
+
+.box {
+  background-color: #fff;
+  margin: 280px auto;
+  width: 505px;
+  height: 305px;
+  position: relative;
+  box-shadow:inset 100 0 10px #ff9f1a;
+  border-radius: 25px;
+  border: 10px solid #ffaf40;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.box b {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff200;
+  box-shadow: inset 120px 90px 95px rgb(247, 113, 3);
+  position: absolute;
+  -webkit-animation: moveX 2.05s ease-in 0s infinite alternate, moveY 1.4s ease-in 0s infinite alternate;
+  -moz-animation: moveX 4.05s ease-in 0s infinite alternate, moveY 1.4s ease-in 0s infinite alternate;
+  -o-animation: moveX 7.05s ease-in 0s infinite alternate, moveY 1.4s ease-in 0s infinite alternate;
+  animation: moveX 7.05s ease-in 0s infinite alternate, moveY 1.4s ease-in 0s infinite alternate;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 480px;}  
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 480px; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 480px; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 480px; }
+}
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+
+
